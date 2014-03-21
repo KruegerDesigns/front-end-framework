@@ -13,3 +13,5 @@ A front-end framework for making Websites.
 * JavaScript
 	* jQuery
 	* Initial scripts file, ***init.js***
+* Images
+	* Where images go, currently empty...
