@@ -1,0 +1,77 @@
+html {
+  font-size: 100%;
+}
+h1,
+.alpha,
+h2,
+.beta,
+h3,
+.gamma,
+h4,
+.delta,
+h5,
+.epsilon,
+h6,
+.zeta {
+  font-weight: bold;
+  margin: 0;
+}
+h1,
+.alpha {
+  font-size: 3.75em;
+  line-height: 0.9333333333333333;
+  margin-bottom: 0.4666666666666667em;
+}
+h2,
+.beta {
+  font-size: 2.8125em;
+  line-height: 1.2444444444444445;
+  margin-bottom: 0.6222222222222222em;
+}
+h3,
+.gamma {
+  font-size: 1.875em;
+  line-height: 1.8666666666666667;
+  margin-bottom: 0.9333333333333333em;
+}
+h4,
+.delta {
+  font-size: 1.640625em;
+  line-height: 1.0666666666666667;
+  margin-bottom: 1.0666666666666667em;
+}
+h5,
+.epsilon {
+  font-size: 1.40625em;
+  line-height: 1.2444444444444445;
+  margin-bottom: 1.2444444444444445em;
+}
+h6,
+.zeta {
+  font-size: 1.25em;
+  line-height: 1.4;
+  margin-bottom: 1.4em;
+}
+p,
+blockquote {
+  font-size: 1.25em;
+  margin: 0 0 1.4em;
+  line-height: 1.4;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+dl,
+ol,
+ul {
+  font-size: 1em;
+  margin: 0 0 1.4em;
+  padding: 0;
+}
+dd,
+dt,
+li {
+  line-height: 1.4;
+  margin: 0;
+}
