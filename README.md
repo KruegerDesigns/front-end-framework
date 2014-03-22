@@ -1,7 +1,7 @@
 front-end-framework
 ===================
 
-A front-end framework for making Websites. Includes Gulp, **The streaming build system**, for working with LESS and JavaScript files.
+A front-end framework for making Websites. Includes a Gulp setup for working with LESS and JavaScript files.
 
 ## What's in Here:
 
