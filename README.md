@@ -3,6 +3,8 @@ front-end-framework
 
 A front-end framework for making Websites. Includes a Gulp setup for working with LESS and JavaScript files.
 
+Code in the dev folder is preprocessed. Code the live folder is processed via Gulp.
+
 ## What's in Here:
 
 * HTML
@@ -25,6 +27,7 @@ A front-end framework for making Websites. Includes a Gulp setup for working wit
 	* [gulp-concat](https://www.npmjs.org/search?q=gulp-concat) - Concatenates files
 	* [gulp-uglify](https://www.npmjs.org/search?q=gulp-uglify) - Minify files with UglifyJS
 	* [gulp-rename](https://www.npmjs.org/search?q=gulp-rename) - Rename files
+	* [gulp-file-include]() - Include partial files
 
 * Images
 	* Where images go, currently empty...

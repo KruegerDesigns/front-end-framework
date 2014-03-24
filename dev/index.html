@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>HTML5 Front-end Framework</title>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="/assets/stylesheets/style.css">
+</head>
+<body>
+
+	@@include('dev/partials/_home.html')
+
+	<!-- js, jQuery, init.js goes here -->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript">
+	if (typeof jQuery == 'undefined') {
+	    document.write(unescape("%3Cscript src='_/javascripts/vendor/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+	}
+	</script>
+	<script type="text/javascript" src="/assets/javascripts/all.min.js"></script>
+
+</body>
+</html>
