@@ -17,6 +17,7 @@ Code in the dev folder is preprocessed. Code the live folder is processed via Gu
 * JavaScript
 	* jQuery
 	* Initial scripts file, ***init.js***
+	* [ScrollMagic](http://janpaepke.github.io/ScrollMagic) and the [greensock](http://www.greensock.com/licensing/) library
 
 * Node
 	* [path](https://www.npmjs.org/search?q=path) - Node.JS path module (used with gulp-less plugin)
@@ -27,7 +28,8 @@ Code in the dev folder is preprocessed. Code the live folder is processed via Gu
 	* [gulp-concat](https://www.npmjs.org/search?q=gulp-concat) - Concatenates files
 	* [gulp-uglify](https://www.npmjs.org/search?q=gulp-uglify) - Minify files with UglifyJS
 	* [gulp-rename](https://www.npmjs.org/search?q=gulp-rename) - Rename files
-	* [gulp-file-include]() - Include partial files
+	* [gulp-file-include](https://www.npmjs.org/package/gulp-file-include) - Include partial files
+	* [gulp-imagemin](https://www.npmjs.org/package/gulp-imagemin) - Minify PNG, JPEG and GIF images
 
 * Images
-	* Where images go, currently empty...
+	* Images are placed in ***dev/img/***, then minified and moved to ***live/img/*** - Thanks to: [Badhon Ebrahim](http://dribbble.com/shots/586626-Dribbble-Background-By-Badhon-Ebrahim)

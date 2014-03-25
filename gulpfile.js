@@ -9,6 +9,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var fileinclude = require('gulp-file-include')
+var imagemin = require('gulp-imagemin');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -43,12 +44,20 @@ gulp.task('fileinclude', function() {
     .pipe(gulp.dest('live/'))
 });
 
+// Minify PNG, JPEG and GIF images
+gulp.task('imagemin', function () {
+    gulp.src('dev/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('live/img'));
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('dev/js/*.js', ['lint', 'scripts']);
     gulp.watch('dev/less/*.less', ['less']);
     gulp.watch('dev/*.html', ['fileinclude']);
+    gulp.watch('dev/img/*.png', ['imagemin']);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'less', 'scripts', 'watch', 'fileinclude']);
+gulp.task('default', ['lint', 'less', 'scripts', 'watch', 'fileinclude', 'imagemin']);

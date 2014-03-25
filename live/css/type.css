@@ -1,4 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 html {
+  font-family: "Open Sans", sans-serif;
   font-size: 100%;
 }
 h1,
@@ -61,17 +63,4 @@ blockquote {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-}
-dl,
-ol,
-ul {
-  font-size: 1em;
-  margin: 0 0 1.4em;
-  padding: 0;
-}
-dd,
-dt,
-li {
-  line-height: 1.4;
-  margin: 0;
 }

@@ -6,11 +6,16 @@
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<link rel="stylesheet" href="/assets/stylesheets/style.css">
+<meta name="viewport" content="width=980">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+	@@include('dev/partials/_masthead.html')
+	
 	@@include('dev/partials/_home.html')
+
+	@@include('dev/partials/_parallax.html')
 
 	<!-- js, jQuery, init.js goes here -->
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -19,7 +24,13 @@
 	    document.write(unescape("%3Cscript src='_/javascripts/vendor/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
 	}
 	</script>
-	<script type="text/javascript" src="/assets/javascripts/all.min.js"></script>
+
+	<!-- js, jQuery, init.js goes here -->
+	<!-- <script type="text/javascript" src="/dev/js/vendor/skrollr.min.js"></script> -->
+	<script type="text/javascript" src="/dev/js/vendor/waypoints.min.js"></script>
+	<script type="text/javascript" src="/dev/js/vendor/jquery.scroll_to.js"></script>
+	<script type="text/javascript" src="/dev/js/vendor/jquery.snapscroll.min.js"></script>
+	<script type="text/javascript" src="js/all.min.js"></script>
 
 </body>
 </html>
