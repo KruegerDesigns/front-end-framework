@@ -3,10 +3,10 @@ $( document ).ready(function() {
 
 	console.log( "ready!" );
 
-	// Get the height of the browser window, and apply it to each scroll-wrap element
+	// Get the height of the browser window, and apply it to each scroll-wrap (panel) element
 	$('.scroll-wrap').css('height', $(window).height());
 
-	// Get the height of the page, and then offset the background position
+	// Moves background image slightly when scorlling, i.e. Parallax affect
 	$('.scroll-wrap[data-type="background"]').each(function(){
 		var $bgobj = $(this); // assigning the object
 		$window = $(window);
@@ -21,8 +21,10 @@ $( document ).ready(function() {
 		});
 	});
 
+	// Causes snapping of panel at top of viewport
 	$('.wrapper').snapscroll();
 
+	// Fire a jquery event when top of element reached top of viewport
 	$('.scroll-wrap:nth-child(3)').waypoint(function() {
 	  alert('Basic example callback triggered.');
 	});
